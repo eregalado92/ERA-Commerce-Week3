@@ -233,8 +233,8 @@ function AdminReportsPage({ currentUser, setCurrentView, token }) {
                 <td className="px-4 py-3 text-sm text-slate-600">{item.category_name}</td>
                 <td className="px-4 py-3 text-sm">{item.stock_quantity}</td>
                 <td className="px-4 py-3 text-sm">
-                  <span className={`font-medium ${getStockStatusColor(item.status)}`}>
-                    {formatStatus(item.status)}
+                  <span className={`font-medium ${getStockStatusColor(item.stock_status)}`}>
+                    {formatStatus(item.stock_status)}
                   </span>
                 </td>
               </tr>

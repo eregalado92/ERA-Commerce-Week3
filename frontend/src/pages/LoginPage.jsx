@@ -22,7 +22,7 @@ function LoginPage({ setCurrentView, setCurrentUser, setToken }) {
     setLoading(true);
 
     try {
-      const response = await fetch(`${BASE_URL}/login`, {
+      const response = await fetch(`${BASE_URL}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(loginData)
@@ -52,7 +52,7 @@ function LoginPage({ setCurrentView, setCurrentUser, setToken }) {
     setLoading(true);
 
     try {
-      const response = await fetch(`${BASE_URL}/users`, {
+      const response = await fetch(`${BASE_URL}/auth/users`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(registerData)
